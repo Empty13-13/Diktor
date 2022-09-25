@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Расчет цены"
+})
+<body>
+<div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page">
+
+    <div class="titleMain">
+      <h1 class="titleMain__title">РАССЧИТАТЬ ЦЕНУ</h1>
+      <p class="titleMain__description">РАСЧЕТ ЦЕНЫ</p>
+    </div>
+    <div class="description-faq">
+      <div class="description-faq__container">
+        <div class="description-faq__body">
+          <p class="description-faq__text">Цена озвучки рассчитывается по формуле:</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="priceCalc">
+      <div class="priceCalc__container">
+        <div class="priceCalc__body">
+          <div class="priceCalc__nameCalc">
+            Цена озвучки рассчитывается по формуле:
+          </div>
+          <div class="priceCalc__program">
+            Программа от программиста
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="registration">
+      <div class="registration__container">
+        <div class="registration__body">
+          <div class="registration__column">
+            <div class="registration__row">
+              <div class="registration__title">Регистрация</div>
+            </div>
+            <div class="registration__row">
+              <p class="registration__text">
+                23392 пользователей нам доверяют!<br>
+                Присоединяйтесь!
+              </p>
+            </div>
+            <div class="registration__row">
+              <div class="registration__input">
+                <input type="text" placeholder="Your Email*">
+                <a href="" class="registration__btn _blue _btn">Зарегистрироваться</a>
+              </div>
+            </div>
+          </div>
+          <div class="registration__column">
+            <div class="registration__img">
+              <img src="img/main/empty2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>

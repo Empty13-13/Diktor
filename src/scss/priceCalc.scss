@@ -1,0 +1,38 @@
+.priceCalc {
+  
+  &__container {
+  }
+  
+  &__body {
+  }
+  
+  &__nameCalc {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    @media (max-width: $pc) {
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 23px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 22px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 21px;
+    }
+  }
+  
+  &__program {
+    height: 360px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}

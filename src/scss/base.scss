@@ -1,0 +1,364 @@
+// Общий файл элементов форм
+// Для подключения/отключения стилей конкретного єлемента формы смотри base/forms/forms.scss
+@import "base/forms/forms";
+
+// Стили попапов
+// @import "base/popup";
+
+// Стили спойлеров
+// @import "base/spollers";
+
+// Стили табов
+// @import "base/tabs";
+
+// Стили карт
+// @import "base/maps";
+
+// Стили блока "показать еще"
+// @import "base/showmore";
+
+// Стили для полноэкранного блока
+// @import "base/fullscreen";
+
+// Стили для липкого блока
+// @import "base/sticky";
+
+// Стили для отзывчивых картинок (IBG)
+// Сниппет (HTML): ibg (div c картинкой и классами)
+// Сниппет (HTML): ibga (a c картинкой и классами)
+[class*="-ibg"] {
+  position: relative;
+  
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+[class*="-ibg_contain"] {
+  img {
+    object-fit: contain;
+  }
+}
+
+// Шаблоны (заготовки)
+// @extend %имя шаблона;
+// Сниппет (SCSS): ex
+
+// Счетчик для списка
+%listCounter {
+  list-style-type: none;
+  counter-reset: item;
+  
+  li {
+    position: relative;
+    
+    &:before {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+// Адаптивное видео
+%responsiveVideo {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+  
+  video,
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Видео в качестве фона
+%videoBackground {
+  video,
+  iframe,
+  object,
+  embed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+  }
+}
+
+// Серый фильтр
+%grayfilter {
+  transition: all 0.3s ease 0s;
+  filter: grayscale(1);
+  @media (any-hover: hover) {
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+// Отменить выделение
+%noselect {
+  user-select: none;
+}
+
+// Зеркальное отображение
+%mirror {
+  transform: scale(-1, 1);
+}
+
+// Плавный скролл
+%smoothscroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+// Скрыть скролл
+%hidescroll {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+//====================================================================================================
+._btn {
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  width: 193px;
+  padding: 13px 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  &._yellow {
+    background: #FFC700;
+    color: #000000;
+  }
+  
+  &._blue {
+    background-color: $blueColor;
+    color: #FDFDFD;
+  }
+  
+  @media (max-width: $pc) {
+    font-size: 15px;
+    width: 183px;
+  }
+  @media (max-width: $tablet) {
+    font-size: 14px;
+    width: 173px;
+    padding: 12px 0;
+  }
+  @media (max-width: $mobile) {
+    font-size: 13px;
+    width: 163px;
+    padding: 11px 0;
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: 12px;
+    width: 153px;
+    padding: 10px 0;
+  }
+}
+
+a {
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.titleMain {
+  padding: 35px 0px 35px 120px;
+  @media (max-width: $tablet) {
+    padding: 30px 10px;
+  }
+  
+  &__title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #303030;
+    
+    @media (max-width: $pc) {
+      font-size: 38px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 36px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 34px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 32px;
+    }
+  }
+  
+  &__description {
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 1.2;
+    @media (max-width: $pc) {
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 23px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 22px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 21px;
+    }
+  }
+}
+
+audio {
+  &::-webkit-media-controls-play-button {
+  
+  }
+  
+}
+
+.btnBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &__moreBtn {
+    width: auto;
+    padding: 10px 10px;
+  }
+}
+
+.titleCenter {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  color: #111416;
+  margin-bottom: 60px;
+  text-align: center;
+  
+  span {
+    color: $blueColor;
+  }
+  
+  @media (max-width: $pc) {
+    font-size: 34px;
+  }
+  @media (max-width: $tablet) {
+    font-size: 32px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 30px;
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: 28px;
+  }
+  
+  small {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    
+    @media (max-width:$pc){
+      font-size: 17px;
+    }
+    @media (max-width:$tablet){
+      font-size: 16px;
+    }
+    @media (max-width:$mobile){
+      font-size: 15px;
+    }
+    @media (max-width:$mobileSmall){
+      font-size: 14px;
+    }
+  }
+  
+  &._left {
+    text-align: left;
+  }
+}
+
+button,textarea {
+  outline: none !important;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  margin-bottom: 50px;
+  
+  @media (max-width:$pc){
+    font-size: 24px;
+  }
+  @media (max-width:$tablet){
+    font-size: 23px;
+  }
+  @media (max-width:$mobile){
+    font-size: 22px;
+  }
+  @media (max-width:$mobileSmall){
+    font-size: 20px;
+  }
+  
+  &._small {
+    font-size: 18px;
+    
+    @media (max-width:$pc){
+      font-size: 17px;
+    }
+    @media (max-width:$tablet){
+      font-size: 16px;
+    }
+    @media (max-width:$mobile){
+      font-size: 15px;
+    }
+    @media (max-width:$mobileSmall){
+      font-size: 14px;
+    }
+  }
+  
+  &._center {
+    text-align: center;
+  }
+}
+
+input[type=file] {
+  display: none;
+}
+
+[data-spoller] {
+  cursor: pointer;
+}

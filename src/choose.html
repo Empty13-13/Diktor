@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"ОНЛАЙН ИНСТРУМЕНТЫ"
+})
+<body>
+<div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page">
+    <div class="titleMain">
+      <h1 class="titleMain__title">ВЫБОР ДИКТОРА ДЛЯ ОЗВУЧИВАНИЯ</h1>
+      <p class="titleMain__description">Условные обозначения базы дикторов</p>
+    </div>
+
+    <div class="chooseDiktor">
+      <div class="chooseDiktor__container">
+        <div class="chooseDiktor__body">
+          <div class="chooseDiktor__filter filter-chooseDiktor">
+            <div class="filter-chooseDiktor__body">
+              <div class="filter-chooseDiktor__top top-filter-chooseDiktor">
+                <button class="top-filter-chooseDiktor__btn _btn _blue">Мужские голоса</button>
+                <button class="top-filter-chooseDiktor__btn _btn _blue">Женские голоса</button>
+                <button class="top-filter-chooseDiktor__btn _btn _blue">Детские голоса</button>
+                <button class="top-filter-chooseDiktor__btn _btn _blue">Вокалисты</button>
+                <button class="top-filter-chooseDiktor__btn _btn _blue">Пародисты</button>
+                <button class="top-filter-chooseDiktor__btn _btn _blue">Иностранные</button>
+              </div>
+              <div class="filter-chooseDiktor__center filter-chooseDiktor">
+                <div class="filter-chooseDiktor__display">
+                  <div class="checkbox">
+                    <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_1" class="checkbox__label">
+                      <span class="checkbox__text">Отображать только</span>
+                    </label>
+                  </div>
+                  <div class="filter-chooseDiktor__chooseDiktorOnlineBlock">
+                    ДОСТУПНЫХ
+                  </div>
+                </div>
+                <div class="filter-chooseDiktor__centerFilter">
+                  <div class="filter-chooseDiktor__name">
+                    Фильтр:
+                  </div>
+                  <div class="filter-chooseDiktor__btns">
+                    <div data-filterCenter class="filter-chooseDiktor__btn">Топ дикторы</div>
+                    <div data-filterCenter class="filter-chooseDiktor__btn">Оперативные</div>
+                    <div data-filterCenter class="filter-chooseDiktor__btn">По цене</div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-chooseDiktor__bottom bottom-filter-chooseDiktor">
+                <div class="bottom-filter-chooseDiktor__body">
+                  <div class="bottom-filter-chooseDiktor__column">
+                    <div class="checkbox">
+                      <input id="a1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                             name="form[]">
+                      <label for="a1" class="checkbox__label">
+                        <span class="checkbox__text">Только с чистовой начиткой</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="a2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                             name="form[]">
+                      <label for="a2" class="checkbox__label">
+                        <span class="checkbox__text">Только автоответчик под ключ</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="a3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                             name="form[]">
+                      <label for="a3" class="checkbox__label">
+                        <span class="checkbox__text">XXX-тексты (спец-цена)</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="bottom-filter-chooseDiktor__column">
+                    <div class="bottom-filter-chooseDiktor__voice">
+                      <div class="checkbox">
+                        <input id="b1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                               name="form[]">
+                        <label for="b1" class="checkbox__label">
+                          <span class="checkbox__text">Бас</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input id="b2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                               name="form[]">
+                        <label for="b2" class="checkbox__label">
+                          <span class="checkbox__text">Баритон</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input id="b3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                               name="form[]">
+                        <label for="b3" class="checkbox__label">
+                          <span class="checkbox__text">Тенор</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input id="b4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                               name="form[]">
+                        <label for="b4" class="checkbox__label">
+                          <span class="checkbox__text">Альт</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input id="b5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                               name="form[]">
+                        <label for="b5" class="checkbox__label">
+                          <span class="checkbox__text">Сопрано</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input id="b6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                               name="form[]">
+                        <label for="b6" class="checkbox__label">
+                          <span class="checkbox__text">Молодой</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input id="b7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                               name="form[]">
+                        <label for="b7" class="checkbox__label">
+                          <span class="checkbox__text">Средний</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input id="b8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                               name="form[]">
+                        <label for="b8" class="checkbox__label">
+                          <span class="checkbox__text">Старческий</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-filter-chooseDiktor__column">
+                    <form class="bottom-filter-chooseDiktor__find find-bottom-filter-chooseDiktor">
+                      <div class="find-bottom-filter-chooseDiktor__body">
+                        <div class="find-bottom-filter-chooseDiktor__input">
+                          <input autocomplete="on" type="text" name="form[]" placeholder="Поиск по имени"
+                                 class="input">
+                        </div>
+                        <button type="button" class="find-bottom-filter-chooseDiktor__btn _btn _blue">Найти</button>
+                      </div>
+                    </form>
+                    <div class="bottom-filter-chooseDiktor__lang lang-bottom-filter-chooseDiktor">
+                      <div class="lang-bottom-filter-chooseDiktor__body">
+                        <div class="lang-bottom-filter-chooseDiktor__name">Язык:</div>
+                        <div class="lang-bottom-filter-chooseDiktor__select">
+                          <select name="form[]">
+                            <option value="1" selected="selected">Все языки</option>
+                            <option value="2">Русский</option>
+                            <option value="3">Английский</option>
+                            <option value="4">Китайский</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chooseList">
+            <div class="chooseList__title">
+              <span>Сценаристы онлайн в базе голосов</span>
+              <div class="chooseList__btn _btn _blue">ВЫБРАТЬ</div>
+            </div>
+            <div class="chooseList__hot">
+              <span>ТОП дикторов</span>
+              <div class="chooseList__hot-block">Проверены</div>
+              <div class="chooseList__hot-block">От 150р</div>
+              <div class="chooseList__hot-block">Онлайн 24/7</div>
+            </div>
+          </div>
+          <div class="chooseDiktor__list list-chooseDiktor">
+            <div class="list-chooseDiktor__body">
+              <div class="list-chooseDiktor__block block-list-chooseDiktor">
+                <div class="block-list-chooseDiktor__body">
+                  <div class="block-list-chooseDiktor__img">
+                    <img src="img/main/empty.jpg" alt="">
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <div class="block-list-chooseDiktor__nameBlock">
+                      <div class="block-list-chooseDiktor__name">Лиза Артемьева</div>
+                      <div class="block-list-chooseDiktor__status _online">online</div>
+                    </div>
+                    <div class="block-list-chooseDiktor__chooseBlock">
+                      <a href="" class="block-list-chooseDiktor__btn _btn _yellow">ВЫБРАТЬ</a>
+                      <div class="block-list-chooseDiktor__rating">
+                        Рейтинг 5.0
+                      </div>
+                    </div>
+                    <div class="block-list-chooseDiktor__price">
+                      Цена начитки:
+                    </div>
+                    <div class="block-list-chooseDiktor__hours">Выполение: от 1 час.</div>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textCenter">Сейчас диктор:</p>
+                    <p class="block-list-chooseDiktor__textCenter"><span>Доступен до 20:00</span></p>
+                    <div class="block-list-chooseDiktor__play play-block-list-chooseDiktor">
+                      <div class="play-block-list-chooseDiktor__body">
+                        <div class="play-block-list-chooseDiktor__btns">
+                          <button type="button" class="play-block-list-chooseDiktor__playBtn">
+                            <img src="img/icons/playBtn.svg" alt="">
+                          </button>
+                          <button type="button" class="play-block-list-chooseDiktor__downloadBtn">
+                            <img src="img/icons/downloadBtn.png" alt="">
+                          </button>
+                        </div>
+                        <audio src="sdasd"></audio>
+                        <p class="block-list-chooseDiktor__textCenter">
+                          Владение языками:<br>
+                          русский
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textSmall">
+                      Дополнительные услуги:<br>
+                      -чистовая начитка(+50% к ставке диктора)
+                    </p>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textSmall _star">Цена: от 200.00 руб</p>
+                    <p class="block-list-chooseDiktor__textSmall _star">Срок записи: до 1 час</p>
+                    <p class="block-list-chooseDiktor__textSmall _check">Качество: 4.9</p>
+                    <p class="block-list-chooseDiktor__textSmall _check">Оперативность 5.0</p>
+                    <a href="" class="block-list-chooseDiktor__btn _btn _blue">Сделать заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list-chooseDiktor__block block-list-chooseDiktor">
+                <div class="block-list-chooseDiktor__body">
+                  <div class="block-list-chooseDiktor__img">
+                    <img src="img/main/empty.jpg" alt="">
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <div class="block-list-chooseDiktor__nameBlock">
+                      <div class="block-list-chooseDiktor__name">Лиза Артемьева</div>
+                      <div class="block-list-chooseDiktor__status _online">online</div>
+                    </div>
+                    <div class="block-list-chooseDiktor__chooseBlock">
+                      <a href="" class="block-list-chooseDiktor__btn _btn _yellow">ВЫБРАТЬ</a>
+                      <div class="block-list-chooseDiktor__rating">
+                        Рейтинг 5.0
+                      </div>
+                    </div>
+                    <div class="block-list-chooseDiktor__price">
+                      Цена начитки:
+                    </div>
+                    <div class="block-list-chooseDiktor__hours">Выполение: от 1 час.</div>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textCenter">Сейчас диктор:</p>
+                    <p class="block-list-chooseDiktor__textCenter"><span>Доступен до 20:00</span></p>
+                    <div class="block-list-chooseDiktor__play play-block-list-chooseDiktor">
+                      <div class="play-block-list-chooseDiktor__body">
+                        <div class="play-block-list-chooseDiktor__btns">
+                          <button type="button" class="play-block-list-chooseDiktor__playBtn">
+                            <img src="img/icons/playBtn.svg" alt="">
+                          </button>
+                          <button type="button" class="play-block-list-chooseDiktor__downloadBtn">
+                            <img src="img/icons/downloadBtn.png" alt="">
+                          </button>
+                        </div>
+                        <audio src=""></audio>
+                        <p class="block-list-chooseDiktor__textCenter">
+                          Владение языками:<br>
+                          русский
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textSmall">
+                      Дополнительные услуги:<br>
+                      -чистовая начитка(+50% к ставке диктора)
+                    </p>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textSmall _star">Цена: от 200.00 руб</p>
+                    <p class="block-list-chooseDiktor__textSmall _star">Срок записи: до 1 час</p>
+                    <p class="block-list-chooseDiktor__textSmall _check">Качество: 4.9</p>
+                    <p class="block-list-chooseDiktor__textSmall _check">Оперативность 5.0</p>
+                    <a href="" class="block-list-chooseDiktor__btn _btn _blue">Сделать заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list-chooseDiktor__block block-list-chooseDiktor">
+                <div class="block-list-chooseDiktor__body">
+                  <div class="block-list-chooseDiktor__img">
+                    <img src="img/main/empty.jpg" alt="">
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <div class="block-list-chooseDiktor__nameBlock">
+                      <div class="block-list-chooseDiktor__name">Лиза Артемьева</div>
+                      <div class="block-list-chooseDiktor__status _online">online</div>
+                    </div>
+                    <div class="block-list-chooseDiktor__chooseBlock">
+                      <a href="" class="block-list-chooseDiktor__btn _btn _yellow">ВЫБРАТЬ</a>
+                      <div class="block-list-chooseDiktor__rating">
+                        Рейтинг 5.0
+                      </div>
+                    </div>
+                    <div class="block-list-chooseDiktor__price">
+                      Цена начитки:
+                    </div>
+                    <div class="block-list-chooseDiktor__hours">Выполение: от 1 час.</div>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textCenter">Сейчас диктор:</p>
+                    <p class="block-list-chooseDiktor__textCenter"><span>Доступен до 20:00</span></p>
+                    <div class="block-list-chooseDiktor__play play-block-list-chooseDiktor">
+                      <div class="play-block-list-chooseDiktor__body">
+                        <div class="play-block-list-chooseDiktor__btns">
+                          <button type="button" class="play-block-list-chooseDiktor__playBtn">
+                            <img src="img/icons/playBtn.svg" alt="">
+                          </button>
+                          <button type="button" class="play-block-list-chooseDiktor__downloadBtn">
+                            <img src="img/icons/downloadBtn.png" alt="">
+                          </button>
+                        </div>
+                        <audio src=""></audio>
+                        <p class="block-list-chooseDiktor__textCenter">
+                          Владение языками:<br>
+                          русский
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textSmall">
+                      Дополнительные услуги:<br>
+                      -чистовая начитка(+50% к ставке диктора)
+                    </p>
+                  </div>
+                  <div class="block-list-chooseDiktor__column">
+                    <p class="block-list-chooseDiktor__textSmall _star">Цена: от 200.00 руб</p>
+                    <p class="block-list-chooseDiktor__textSmall _star">Срок записи: до 1 час</p>
+                    <p class="block-list-chooseDiktor__textSmall _check">Качество: 4.9</p>
+                    <p class="block-list-chooseDiktor__textSmall _check">Оперативность 5.0</p>
+                    <a href="" class="block-list-chooseDiktor__btn _btn _blue">Сделать заказ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chooseDiktor__navigation navigation-chooseDiktor">
+            <div class="navigation-chooseDiktor__body">
+              <div class="navigation-chooseDiktor__block _active">1</div>
+              <div class="navigation-chooseDiktor__block">2</div>
+              <div class="navigation-chooseDiktor__block">3</div>
+              <div class="navigation-chooseDiktor__block">4</div>
+              <div class="navigation-chooseDiktor__block">5</div>
+              <div class="navigation-chooseDiktor__dotts">...</div>
+              <div class="navigation-chooseDiktor__block">143</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="titleBlock">
+      <div class="titleBlock__container">
+        <div class="titleBlock__body">
+          <div class="titleBlock__column">
+            <p class="titleBlock__title">Что говорят наши клиенты</p>
+          </div>
+          <div class="titleBlock__column">
+            <div class="titleBlock__btn _btn _blue">Прочитать все отзывы</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback">
+      <div class="feedback__container">
+        <div class="feedback__body">
+          <div class="feedback__slider swiper">
+            <div class="feedback__wrapper swiper-wrapper">
+              <div class="feedback__slide swiper-slide swiper-slide-main">
+                <div class="swiper-slide-main__add">
+                  <svg width="62" height="47" viewBox="0 0 62 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M61.0923 0.35083L61.0923 14.1577C61.0923 18.0781 60.3253 22.0838 58.7912 26.1747C57.2571 30.2656 55.233 34.1221 52.7187 37.7443C50.2045 41.3665 47.4773 44.392 44.5369 46.821L32.5199 39.7258C34.9062 35.9758 36.8665 32.0554 38.4006 27.9645C39.892 23.8736 40.6378 19.3139 40.6378 14.2855L40.6378 0.35083L61.0923 0.35083ZM28.8125 0.35083L28.8125 14.1577C28.8125 18.0781 28.0455 22.0838 26.5114 26.1747C24.9773 30.2656 22.9531 34.1221 20.4389 37.7443C17.9247 41.3665 15.1974 44.392 12.2571 46.821L0.240054 39.7258C2.62642 35.9758 4.58665 32.0554 6.12074 27.9645C7.61221 23.8736 8.35795 19.3139 8.35795 14.2855L8.35795 0.35083L28.8125 0.35083Z"
+                      fill="#4A4DC7"/>
+                  </svg>
+                </div>
+                <div class="swiper-slide-main__body">
+                  <div class="swiper-slide-main__top top-swiper-slide-main">
+                    <div class="top-swiper-slide-main__img">
+                      <img src="img/main/empty.jpg" alt="photo">
+                    </div>
+                    <div class="top-swiper-slide-main__column">
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text"><b>текст</b></p>
+                      </div>
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text">
+                          <small>текст</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="swiper-slide-main__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__slide swiper-slide swiper-slide-main">
+                <div class="swiper-slide-main__add">
+                  <svg width="62" height="47" viewBox="0 0 62 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M61.0923 0.35083L61.0923 14.1577C61.0923 18.0781 60.3253 22.0838 58.7912 26.1747C57.2571 30.2656 55.233 34.1221 52.7187 37.7443C50.2045 41.3665 47.4773 44.392 44.5369 46.821L32.5199 39.7258C34.9062 35.9758 36.8665 32.0554 38.4006 27.9645C39.892 23.8736 40.6378 19.3139 40.6378 14.2855L40.6378 0.35083L61.0923 0.35083ZM28.8125 0.35083L28.8125 14.1577C28.8125 18.0781 28.0455 22.0838 26.5114 26.1747C24.9773 30.2656 22.9531 34.1221 20.4389 37.7443C17.9247 41.3665 15.1974 44.392 12.2571 46.821L0.240054 39.7258C2.62642 35.9758 4.58665 32.0554 6.12074 27.9645C7.61221 23.8736 8.35795 19.3139 8.35795 14.2855L8.35795 0.35083L28.8125 0.35083Z"
+                      fill="#4A4DC7"/>
+                  </svg>
+                </div>
+                <div class="swiper-slide-main__body">
+                  <div class="swiper-slide-main__top top-swiper-slide-main">
+                    <div class="top-swiper-slide-main__img">
+                      <img src="img/main/empty.jpg" alt="photo">
+                    </div>
+                    <div class="top-swiper-slide-main__column">
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text"><b>текст</b></p>
+                      </div>
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text">
+                          <small>текст</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="swiper-slide-main__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__slide swiper-slide swiper-slide-main">
+                <div class="swiper-slide-main__add">
+                  <svg width="62" height="47" viewBox="0 0 62 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M61.0923 0.35083L61.0923 14.1577C61.0923 18.0781 60.3253 22.0838 58.7912 26.1747C57.2571 30.2656 55.233 34.1221 52.7187 37.7443C50.2045 41.3665 47.4773 44.392 44.5369 46.821L32.5199 39.7258C34.9062 35.9758 36.8665 32.0554 38.4006 27.9645C39.892 23.8736 40.6378 19.3139 40.6378 14.2855L40.6378 0.35083L61.0923 0.35083ZM28.8125 0.35083L28.8125 14.1577C28.8125 18.0781 28.0455 22.0838 26.5114 26.1747C24.9773 30.2656 22.9531 34.1221 20.4389 37.7443C17.9247 41.3665 15.1974 44.392 12.2571 46.821L0.240054 39.7258C2.62642 35.9758 4.58665 32.0554 6.12074 27.9645C7.61221 23.8736 8.35795 19.3139 8.35795 14.2855L8.35795 0.35083L28.8125 0.35083Z"
+                      fill="#4A4DC7"/>
+                  </svg>
+                </div>
+                <div class="swiper-slide-main__body">
+                  <div class="swiper-slide-main__top top-swiper-slide-main">
+                    <div class="top-swiper-slide-main__img">
+                      <img src="img/main/empty.jpg" alt="photo">
+                    </div>
+                    <div class="top-swiper-slide-main__column">
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text"><b>текст</b></p>
+                      </div>
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text">
+                          <small>текст</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="swiper-slide-main__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__slide swiper-slide swiper-slide-main">
+                <div class="swiper-slide-main__add">
+                  <svg width="62" height="47" viewBox="0 0 62 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M61.0923 0.35083L61.0923 14.1577C61.0923 18.0781 60.3253 22.0838 58.7912 26.1747C57.2571 30.2656 55.233 34.1221 52.7187 37.7443C50.2045 41.3665 47.4773 44.392 44.5369 46.821L32.5199 39.7258C34.9062 35.9758 36.8665 32.0554 38.4006 27.9645C39.892 23.8736 40.6378 19.3139 40.6378 14.2855L40.6378 0.35083L61.0923 0.35083ZM28.8125 0.35083L28.8125 14.1577C28.8125 18.0781 28.0455 22.0838 26.5114 26.1747C24.9773 30.2656 22.9531 34.1221 20.4389 37.7443C17.9247 41.3665 15.1974 44.392 12.2571 46.821L0.240054 39.7258C2.62642 35.9758 4.58665 32.0554 6.12074 27.9645C7.61221 23.8736 8.35795 19.3139 8.35795 14.2855L8.35795 0.35083L28.8125 0.35083Z"
+                      fill="#4A4DC7"/>
+                  </svg>
+                </div>
+                <div class="swiper-slide-main__body">
+                  <div class="swiper-slide-main__top top-swiper-slide-main">
+                    <div class="top-swiper-slide-main__img">
+                      <img src="img/main/empty.jpg" alt="photo">
+                    </div>
+                    <div class="top-swiper-slide-main__column">
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text"><b>текст</b></p>
+                      </div>
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text">
+                          <small>текст</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="swiper-slide-main__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__slide swiper-slide swiper-slide-main">
+                <div class="swiper-slide-main__add">
+                  <svg width="62" height="47" viewBox="0 0 62 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M61.0923 0.35083L61.0923 14.1577C61.0923 18.0781 60.3253 22.0838 58.7912 26.1747C57.2571 30.2656 55.233 34.1221 52.7187 37.7443C50.2045 41.3665 47.4773 44.392 44.5369 46.821L32.5199 39.7258C34.9062 35.9758 36.8665 32.0554 38.4006 27.9645C39.892 23.8736 40.6378 19.3139 40.6378 14.2855L40.6378 0.35083L61.0923 0.35083ZM28.8125 0.35083L28.8125 14.1577C28.8125 18.0781 28.0455 22.0838 26.5114 26.1747C24.9773 30.2656 22.9531 34.1221 20.4389 37.7443C17.9247 41.3665 15.1974 44.392 12.2571 46.821L0.240054 39.7258C2.62642 35.9758 4.58665 32.0554 6.12074 27.9645C7.61221 23.8736 8.35795 19.3139 8.35795 14.2855L8.35795 0.35083L28.8125 0.35083Z"
+                      fill="#4A4DC7"/>
+                  </svg>
+                </div>
+                <div class="swiper-slide-main__body">
+                  <div class="swiper-slide-main__top top-swiper-slide-main">
+                    <div class="top-swiper-slide-main__img">
+                      <img src="img/main/empty.jpg" alt="photo">
+                    </div>
+                    <div class="top-swiper-slide-main__column">
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text"><b>текст</b></p>
+                      </div>
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text">
+                          <small>текст</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="swiper-slide-main__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__slide swiper-slide swiper-slide-main">
+                <div class="swiper-slide-main__add">
+                  <svg width="62" height="47" viewBox="0 0 62 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M61.0923 0.35083L61.0923 14.1577C61.0923 18.0781 60.3253 22.0838 58.7912 26.1747C57.2571 30.2656 55.233 34.1221 52.7187 37.7443C50.2045 41.3665 47.4773 44.392 44.5369 46.821L32.5199 39.7258C34.9062 35.9758 36.8665 32.0554 38.4006 27.9645C39.892 23.8736 40.6378 19.3139 40.6378 14.2855L40.6378 0.35083L61.0923 0.35083ZM28.8125 0.35083L28.8125 14.1577C28.8125 18.0781 28.0455 22.0838 26.5114 26.1747C24.9773 30.2656 22.9531 34.1221 20.4389 37.7443C17.9247 41.3665 15.1974 44.392 12.2571 46.821L0.240054 39.7258C2.62642 35.9758 4.58665 32.0554 6.12074 27.9645C7.61221 23.8736 8.35795 19.3139 8.35795 14.2855L8.35795 0.35083L28.8125 0.35083Z"
+                      fill="#4A4DC7"/>
+                  </svg>
+                </div>
+                <div class="swiper-slide-main__body">
+                  <div class="swiper-slide-main__top top-swiper-slide-main">
+                    <div class="top-swiper-slide-main__img">
+                      <img src="img/main/empty.jpg" alt="photo">
+                    </div>
+                    <div class="top-swiper-slide-main__column">
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text"><b>текст</b></p>
+                      </div>
+                      <div class="top-swiper-slide-main__row">
+                        <p class="top-swiper-slide-main__text">
+                          <small>текст</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="swiper-slide-main__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="registration">
+      <div class="registration__container">
+        <div class="registration__body">
+          <div class="registration__column">
+            <div class="registration__row">
+              <div class="registration__title">Регистрация</div>
+            </div>
+            <div class="registration__row">
+              <p class="registration__text">
+                23392 пользователей нам доверяют!<br>
+                Присоединяйтесь!
+              </p>
+            </div>
+            <div class="registration__row">
+              <div class="registration__input">
+                <input type="text" placeholder="Your Email*">
+                <a href="" class="registration__btn _blue _btn">Зарегистрироваться</a>
+              </div>
+            </div>
+          </div>
+          <div class="registration__column">
+            <div class="registration__img">
+              <img src="img/main/empty2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Контакты"
+})
+<body>
+<div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page">
+
+    <div class="contacts">
+      <div class="contacts__container">
+        <div class="titleMain">
+          <h1 class="titleMain__title">КОНТАКТЫ И ОБРАТНАЯ СВЯЗЬ</h1>
+          <p class="titleMain__description">КОНТАКТЫ</p>
+        </div>
+        <form class="contacts__body">
+          <div class="contacts__column">
+            <div class="contacts__row">
+              <div class="contacts__input">
+                <label for="name">ИМЯ</label>
+                <input id="name" data-required autocomplete="off" type="text" name="form[]" class="input">
+              </div>
+              <div class="contacts__input">
+                <label for="email">E-MAIL</label>
+                <input id="email" data-required="email" autocomplete="off" type="text" name="form[]" class="input">
+              </div>
+            </div>
+            <div class="contacts__row">
+              <div class="contacts__input">
+                <label for="message">НАПИШИТЕ ВАШЕ СООБЩЕНИЕ</label>
+                <textarea data-required="" name="" id="message" class="input"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="contacts__btn _btn _blue">ОТПРАВИТЬ</button>
+          </div>
+          <div class="contacts__column">
+            <div class="contacts__block block-contacts">
+              <div class="block-contacts__body">
+                <div class="block-contacts__column">
+                  <div class="block-contacts__title">ПОЗВОНИТЕ НАМ:</div>
+                  <p class="block-contacts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+                                                  ducimus est ex, laboriosam minima necessitatibus nisi sapiente sunt?
+                                                  Blanditiis exercitationem fuga, non porro quia quo reprehenderit saepe
+                                                  sunt voluptas voluptatum?</p>
+                </div>
+                <div class="block-contacts__column">
+                  <div class="block-contacts__title">НАПИШИТЕ НАМ:</div>
+                  <p class="block-contacts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+                                                  aspernatur, assumenda dolores ipsam magni maxime odit quos repudiandae
+                                                  saepe tempore, temporibus unde voluptas. Ab at error illum
+                                                  perspiciatis porro quas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="registration">
+      <div class="registration__container">
+        <div class="registration__body">
+          <div class="registration__column">
+            <div class="registration__row">
+              <div class="registration__title">Регистрация</div>
+            </div>
+            <div class="registration__row">
+              <p class="registration__text">
+                23392 пользователей нам доверяют!<br>
+                Присоединяйтесь!
+              </p>
+            </div>
+            <div class="registration__row">
+              <div class="registration__input">
+                <input type="text" placeholder="Your Email*">
+                <a href="" class="registration__btn _blue _btn">Зарегистрироваться</a>
+              </div>
+            </div>
+          </div>
+          <div class="registration__column">
+            <div class="registration__img">
+              <img src="img/main/empty2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>

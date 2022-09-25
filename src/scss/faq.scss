@@ -1,0 +1,229 @@
+.faq {
+  
+  &__container {
+  }
+  
+  &__body {
+  }
+  
+  &__row {
+  }
+  
+  &__list {
+  }
+  
+  &__question {
+  }
+  
+  &__answer {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    margin-bottom: 25px;
+  }
+}
+
+.description-faq {
+  margin-bottom: 70px;
+  margin-top: 35px;
+  
+  &__body {
+    background: #1A21BC;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 24px 10px;
+  }
+  
+  &__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    
+    @media (max-width: $pc) {
+      font-size: 23px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 22px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 21px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 20px;
+    }
+  }
+}
+
+.tabsFAQ {
+  
+  &__navigation {
+    margin-bottom: 25px;
+  }
+  
+  // .tabs__title
+  &__title {
+    padding: rem(20) rem(55);
+    background: #FFFFFF;
+    border: 1px solid #C4B5B5;
+    
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    
+    @media (max-width: $pc) {
+      font-size: 16px;
+      padding: rem(19) rem(50);
+    }
+    @media (max-width: $tablet) {
+      font-size: 15px;
+      padding: rem(18) rem(45);
+    }
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      padding: rem(17) rem(40);
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 13px;
+      padding: rem(13) rem(25);
+    }
+    
+    &._tab-active {
+      background: #FFC700;
+      border: none;
+    }
+  }
+  
+  // .tabs__content
+  &__content {
+    border: 1px solid #eee;
+    padding: rem(10) rem(15);
+  }
+  
+  // .tabs__body
+  &__body {
+    
+    & > ol {
+      
+      list-style: none;
+      counter-reset: first;
+      
+      & > li {
+        & > .faq__question {
+          display: inline-block;
+          font-family: 'Inter';
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 1.2;
+          letter-spacing: 0.3px;
+          color: #111416;
+          margin-bottom: 30px;
+          
+          @media (max-width:$pc){
+            font-size: 34px;
+          }
+          @media (max-width:$tablet){
+            font-size: 32px;
+          }
+          @media (max-width:$mobile){
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+          @media (max-width:$mobileSmall){
+            font-size: 28px;
+          }
+        }
+      }
+      
+      & > li:before {
+        display: inline-block;
+        counter-increment: first;
+        content: counters(first, ".") ". ";
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.3px;
+        color: #111416;
+  
+        @media (max-width:$pc){
+          font-size: 34px;
+        }
+        @media (max-width:$tablet){
+          font-size: 32px;
+        }
+        @media (max-width:$mobile){
+          font-size: 30px;
+        }
+        @media (max-width:$mobileSmall){
+          font-size: 28px;
+        }
+      }
+      
+      & ol {
+        list-style: none;
+        counter-reset: li;
+        
+        li {
+          display: inline;
+          
+          & > .faq__question {
+            display: inline-block;
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.2;
+            letter-spacing: 0.3px;
+            color: #1A21BC;
+            margin-bottom: 15px;
+            
+            @media (max-width:$pc){
+              font-size: 23px;
+            }
+            @media (max-width:$tablet){
+              font-size: 22px;
+            }
+            @media (max-width:$mobile){
+              font-size: 21px;
+              margin-bottom: 10px;
+            }
+            @media (max-width:$mobileSmall){
+              font-size: 20px;
+            }
+          }
+        }
+        
+        li:before {
+          display: inline-block;
+          counter-increment: li;
+          content: counters(first, ".") "." counter(li);
+          
+          font-family: 'Inter';
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.2;
+          letter-spacing: 0.3px;
+          color: #1A21BC;
+  
+          @media (max-width:$pc){
+            font-size: 23px;
+          }
+          @media (max-width:$tablet){
+            font-size: 22px;
+          }
+          @media (max-width:$mobile){
+            font-size: 21px;
+          }
+          @media (max-width:$mobileSmall){
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,469 @@
+.order {
+  
+  &__container {
+  }
+  
+  &__body {
+  }
+  
+  &__file {
+  }
+  
+  &__rules {
+  }
+  
+  &__texts {
+  }
+  
+  &__hr {
+    border-bottom: 5px solid #C4C4C4;
+    width: 100%;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+  
+  &__form {
+  
+  }
+}
+
+.file-order {
+  margin-bottom: 80px;
+  
+  &__text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    margin-bottom: 50px;
+    
+    @media (max-width: $pc) {
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 23px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 22px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 21px;
+    }
+  }
+  
+  & ._btn {
+    width: auto;
+    padding: 11px 20px;
+  }
+}
+
+.rules-order {
+  
+  &__body {
+  }
+  
+  &__line {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+    
+    @media (max-width: $pc) {
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 23px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 22px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 20px;
+    }
+  }
+  
+  &__dott {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    &:before {
+      content: '';
+      background: linear-gradient(0deg, #00056B, #00056B), linear-gradient(0deg, #00056B, #00056B), linear-gradient(0deg, #00056B, #00056B), #00056B;
+      width: 27px;
+      height: 27px;
+      display: inline-flex;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    
+  }
+  
+  &__text {
+    margin-left: 40px;
+  }
+}
+
+.texts-order {
+  
+  &__body {
+  }
+  
+  &__row {
+    display: flex;
+    
+    @media (max-width: $mobileSmall) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__column {
+    display: flex;
+    flex-direction: column;
+    
+    &:first-child {
+      flex: 0 0 55%;
+      margin-right: 30px;
+    }
+  }
+  
+  &__input {
+    padding: 55px 65px;
+    background: #F5F5F5;
+    border-radius: 5px;
+    height: 330px;
+    
+    textarea {
+      width: 100%;
+      height: 100%;
+      background: #F5F5F5;
+    }
+    
+    @media (max-width: $pc) {
+      padding: 45px 55px;
+    }
+    @media (max-width: $tablet) {
+      padding: 35px 45px;
+    }
+    @media (max-width: $mobile) {
+      padding: 25px 35px;
+    }
+    @media (max-width: $mobileSmall) {
+      padding: 15px 20px;
+    }
+  }
+  
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #00056B;
+    margin-top: 20px;
+    
+    @media (max-width: $pc) {
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 23px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 22px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 20px;
+    }
+  }
+  
+  &__text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    margin-top: 20px;
+    
+    @media (max-width: $pc) {
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 23px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 22px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 20px;
+    }
+  }
+}
+
+.add-texts-order {
+  
+  &__text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    margin-bottom: 30px;
+    
+    &._big {
+      font-size: 36px;
+      
+      @media (max-width: $pc) {
+        font-size: 33px;
+      }
+      @media (max-width: $tablet) {
+        font-size: 30px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 27px;
+      }
+      @media (max-width: $mobileSmall) {
+        font-size: 24px;
+      }
+    }
+    
+    @media (max-width: $pc) {
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 23px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 22px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 20px;
+    }
+    
+    span {
+      color: #00056B;
+    }
+  }
+  
+  &__check {
+  
+  }
+}
+
+.checkbox {
+  
+  &__label {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #1A21BC;
+    
+    @media (max-width: $pc) {
+      font-size: 33px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 30px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 27px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 24px;
+    }
+  }
+  
+  &__text {
+  }
+  
+  &__input {
+  }
+}
+
+.form-order {
+  margin-bottom: 40px;
+  
+  & > .checkbox {
+    margin-bottom: 35px;
+  
+    & > .checkbox__input {
+    }
+  
+    & > .checkbox__label {
+    }
+  
+    & > .checkbox__text {
+    }
+  }
+  
+  
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    
+    @media (max-width: $mobile) {
+      gap: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  
+    .checkbox {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+    
+      &__input {
+      }
+    
+      &__label {
+        padding: 20px;
+        background: #00056B;
+        border-radius: 10px;
+        display: inline-flex;
+        justify-content:center;
+        align-items: center;
+        margin-right: 25px;
+  
+        @media (max-width:$pc){
+          padding: 17px;
+        }
+        @media (max-width:$tablet){
+          padding: 15px;
+        }
+        @media (max-width:$mobile){
+          padding: 13px;
+        }
+        @media (max-width:$mobileSmall){
+          padding: 12px;
+        }
+      }
+    
+      &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.3px;
+        color: #FAFAF9;
+        
+        @media (max-width:$pc){
+          font-size: 19px;
+        }
+        @media (max-width:$tablet){
+          font-size: 18px;
+        }
+        @media (max-width:$mobile){
+          font-size: 17px;
+        }
+        @media (max-width:$mobileSmall){
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  &__column {
+  }
+  
+  &__input {
+    margin-bottom: 14px;
+    width: 100%;
+    display: flex;
+    
+    &:last-child {
+      margin-bottom: 35px;
+    }
+    
+    input {
+      flex: 1 1 100%;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      padding: 23px 58px;
+      font-size: 24px;
+      font-family: 'Inter';
+      font-weight: 400;
+      line-height: 1.2;
+      
+      @media (max-width: $pc) {
+        padding: 21px 48px;
+        font-size: 23px;
+      }
+      @media (max-width: $tablet) {
+        padding: 19px 38px;
+        font-size: 22px;
+      }
+      @media (max-width: $mobile) {
+        padding: 15px 28px;
+        font-size: 21px;
+      }
+      @media (max-width: $mobileSmall) {
+        padding: 12px 12px;
+        font-size: 20px;
+      }
+    }
+  }
+  
+  &__btn {
+    
+    button {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 30px;
+      line-height: 1.2;
+      letter-spacing: 0.3px;
+      color: #FAFAF9;
+      border-radius: 10px;
+      
+      @media (max-width:$pc){
+        font-size: 19px;
+        padding: 25px
+      }
+      @media (max-width:$tablet){
+        font-size: 20px;
+        padding: 20px
+      }
+      @media (max-width:$mobile){
+        font-size: 17px;
+        padding: 15px
+      }
+      @media (max-width:$mobileSmall){
+        width: 100%;
+        font-size: 16px;
+        padding: 12px
+      }
+    }
+  }
+  
+  &__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #101010;
+    margin-bottom: 25px;
+    
+    @media (max-width: $pc) {
+      font-size: 19px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 17px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    a {
+      color: $blueColor;
+    }
+  }
+}
